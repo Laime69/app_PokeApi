@@ -8,7 +8,7 @@ const PokemonCard = ({ pokemon, onDetail, onAdd }) => {
         alt={pokemon.name}
         className="mx-auto w-24 h-24"
       />
-      <h2 className="capitalize font-bold text-lg">{pokemon.name}</h2>
+      <h2 className=" capitalize font-bold text-lg ">{pokemon.name}</h2>
 
       <div className="flex justify-center gap-2 mt-3">
         <button
