@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+iimport React, { useEffect, useState } from "react";
 import { getPokemons, getPokemonDetail, getPokemonByName } from "./services/pokeApi.js";
 import PokemonCard from "./componentes/PokemonCard.jsx";
 import PokemonModal from "./componentes/PokemonModal.jsx";
@@ -49,11 +49,12 @@ function App() {
   };
 
   return (
-    <div className="p-6 bg-gray-2 min-h-screen">
+    <div className="p-6 bg-gray-20 min-h-screen center ">
       <h1 className="text-3xl font-bold text-center mb-6">
-        PokeAPI
+        PokeAPI 
       </h1>
-      
+      <h6 className="text-1 font-bold text-center mb-1">AUTORES: Hernan Laime  </h6>
+      <h6 className="text-1 font-bold text-center mb-1">Danilo Aramayo  </h6>
 
       <div className="flex justify-center gap-2 mb-6">
         <input
@@ -65,7 +66,7 @@ function App() {
         />
         <button
           onClick={handleSearch}
-          className="bg-blue-600 text-white px-4 rounded"
+          className="bg-purple-600 text-white px-4 rounded"
         >
           Buscar
         </button>
