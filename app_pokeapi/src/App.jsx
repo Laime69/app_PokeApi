@@ -49,12 +49,11 @@ function App() {
   };
 
   return (
-    <div className="p-6 bg-gray-20 min-h-screen center ">
+    <div className="p-6 bg-gray-2 min-h-screen">
       <h1 className="text-3xl font-bold text-center mb-6">
-        PokeAPI 
+        PokeAPI
       </h1>
-      <h6 className="text-1 font-bold text-center mb-1">AUTORES: Hernan Laime  </h6>
-      <h6 className="text-1 font-bold text-center mb-1">Danilo Aramayo  </h6>
+      
 
       <div className="flex justify-center gap-2 mb-6">
         <input
@@ -66,7 +65,7 @@ function App() {
         />
         <button
           onClick={handleSearch}
-          className="bg-purple-600 text-white px-4 rounded"
+          className="bg-blue-600 text-white px-4 rounded"
         >
           Buscar
         </button>
@@ -92,3 +91,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
