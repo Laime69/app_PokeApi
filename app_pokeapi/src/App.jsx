@@ -4,6 +4,7 @@ import PokemonCard from "./componentes/PokemonCard.jsx";
 import PokemonModal from "./componentes/PokemonModal.jsx";
 import TeamPanel from "./componentes/TeamPanel.jsx";
 
+
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [team, setTeam] = useState([]);
@@ -28,17 +29,17 @@ function App() {
       const pokemon = await getPokemonByName(search.toLowerCase());
       setPokemons([pokemon]);
     } catch {
-      alert("Pokemon no encontrado");
+      alert("Pokemon no encontrado!!");
     }
   };
 
   const addToTeam = (pokemon) => {
     if (team.find((p) => p.id === pokemon.id)) {
-      return alert("Este pokemon ya está en el equipo");
+      return alert("Este pokemon ya está en el equipo!!");
     }
 
     if (team.length >= 6) {
-      return alert("El equipo ya está lleno");
+      return alert("El equipo ya está lleno!!");
     }
 
     setTeam([...team, pokemon]);
