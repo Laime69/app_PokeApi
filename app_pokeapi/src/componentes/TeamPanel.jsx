@@ -10,13 +10,13 @@ const TeamPanel = ({ team, removePokemon }) => {
       : 0;
 
   return (
-    <div className="bg-gray-10 p-4 rounded-xl shadow-md">
-      <h2 className="text-xl font-bold mb-2">Equipo ({team.length}/6)</h2>
+    <div className="bg-purple-900 p-4 rounded-xl shadow-md">
+      <h2 className="text-xl font-bold mb-2 ">Equipo ({team.length}/6)</h2>
 
       {team.map((pokemon) => (
         <div
           key={pokemon.id}
-          className="flex justify-between items-center mb-2"
+          className="flex justify-between items-center mb-2 shadow-md "
         >
           <span className="capitalize">{pokemon.name}</span>
           <button
